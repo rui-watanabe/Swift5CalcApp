@@ -9,13 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var carModel = Car()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
-
-
+    
+    
+    @IBAction func doAction(_ sender: Any) {
+        carModel.drive()
+    }
 }
 

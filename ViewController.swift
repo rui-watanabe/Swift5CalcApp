@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     
     @IBAction func doAction(_ sender: Any) {
         carModel.drive()
+        carModel.move(toBack: "to back")
+        let total = carModel.plusAndMinus(num1: carModel.frontWheel, num2: carModel.rearWheel)
+        print("total number of wheel is \(total)")
     }
 }
 
